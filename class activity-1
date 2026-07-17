@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shadows in CSS</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f0f4f8;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+        gap: 40px;
+    }
+/**/
+    h1 {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        color: #333;
+    }
+
+    /* 1. BASIC BOX SHADOW */
+    .box1 {
+        width: 200px;
+        height: 150px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+        /* syntax: x-offset y-offset blur spread color */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* 3. INSET SHADOW - shadow inside */
+    .box3 {
+        width: 200px;
+        height: 150px;
+        background: #ddd;
+        border-radius: 10px;
+        box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* 4. GLOW SHADOW */
+    .box4 {
+        width: 200px;
+        height: 150px;
+        background: #2196F3;
+        color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(33, 150, 243, 0.6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+    }
+    .box4:hover {
+        box-shadow: 0 0 40px rgba(33, 150, 243, 0.9);
+    }
+
+    /* 5. TEXT SHADOW */
+    .text-shadow {
+        font-size: 32px;
+        font-weight: bold;
+        color: #ff5722;
+        text-shadow: 3px 3px 0px #ffc107, 6px 6px 0px rgba(0,0,0,0.1);
+    }
+
+    .label {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #555;
+    }
+</style>
+</head>
+<body>
+
+    <h1>Understanding Shadows in CSS</h1>
+
+    <div>
+        <div class="box1">Basic Shadow</div>
+        <p class="label">box-shadow: 10px 10px 20px rgba(0,0,0,0.2)</p>
+    </div>
+
+    <div>
+        <div class="box3">Inset Shadow</div>
+        <p class="label">box-shadow: inset ...</p>
+    </div>
+
+    <div>
+        <div class="box4">Hover Glow</div>
+        <p class="label">Hover to see glow effect</p>
+    </div>
+
+    <div class="text-shadow">TEXT SHADOW EXAMPLE</div>
+
+</body>
+</html>
