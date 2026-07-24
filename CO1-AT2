@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Programming - CO1</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin:0;
+            background:#f4f4f4;
+        }
+        header{
+            background:#0066cc;
+            color:white;
+            padding:20px;
+            text-align:center;
+        }
+        nav{
+            background:#333;
+            padding:10px;
+            text-align:center;
+        }
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:15px;
+        }
+        section{
+            background:white;
+            margin:20px;
+            padding:20px;
+            border-radius:8px;
+            box-shadow:0 0 5px gray;
+        }
+        pre{
+            background:#f0f0f0;
+            padding:10px;
+            border-left:5px solid #0066cc;
+            overflow:auto;
+        }
+        footer{
+            background:#0066cc;
+            color:white;
+            text-align:center;
+            padding:15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Internet Programming</h1>
+    <p>Standards-Compliant HTML/XHTML, XML & HTTP</p>
+</header>
+
+<nav>
+    <a href="#html">HTML</a>
+    <a href="#xml">XML</a>
+    <a href="#http">HTTP</a>
+</nav>
+
+<section id="html">
+    <h2>HTML5 Web Page</h2>
+    <p>
+        HTML is the standard markup language used to create web pages.
+        It provides headings, paragraphs, images, tables, forms, and links.
+    </p>
+</section>
+
+<section id="xml">
+    <h2>XML Example</h2>
+
+<pre>
+&lt;student&gt;
+    &lt;name&gt;John&lt;/name&gt;
+    &lt;course&gt;Internet Programming&lt;/course&gt;
+    &lt;year&gt;2026&lt;/year&gt;
+&lt;/student&gt;
+</pre>
+
+</section>
+
+<section id="http">
+    <h2>HTTP Communication</h2>
+
+    <ol>
+        <li>User enters a website URL.</li>
+        <li>DNS converts the domain name into an IP address.</li>
+        <li>Browser sends an HTTP request.</li>
+        <li>Server processes the request.</li>
+        <li>Server returns an HTTP response.</li>
+        <li>Browser displays the web page.</li>
+    </ol>
+
+    <h3>Sample HTTP Response</h3>
+
+<pre>
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 1024
+Connection: keep-alive
+</pre>
+
+</section>
+
+<section>
+    <h2>Features of a Standards-Compliant Web Page</h2>
+
+    <ul>
+        <li>Uses HTML5 DOCTYPE.</li>
+        <li>Semantic elements (header, nav, section, footer).</li>
+        <li>Proper nesting and closing of tags.</li>
+        <li>Responsive viewport meta tag.</li>
+        <li>Valid HTML structure.</li>
+    </ul>
+
+</section>
+
+<footer>
+    <p>&copy; 2026 Internet Programming Lab | HTML5 Example</p>
+</footer>
+
+</body>
+</html>
